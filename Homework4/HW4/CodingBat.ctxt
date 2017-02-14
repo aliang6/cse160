@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=nums
+comment0.target=int\ countEvens(int[])
+comment1.params=nums
+comment1.target=int\ bigDiff(int[])
+comment2.params=nums
+comment2.target=int\ sum13(int[])
+comment3.params=nums
+comment3.target=int\ sum67(int[])
+comment4.params=nums
+comment4.target=boolean\ has22(int[])
+comment5.params=nums
+comment5.target=boolean\ lucky13(int[])
+comment6.params=nums
+comment6.target=boolean\ sum28(int[])
+comment7.params=nums
+comment7.target=int\ maxSpan(int[])
+comment8.params=nums
+comment8.target=int[]\ fix34(int[])
+comment9.params=nums
+comment9.target=boolean\ canBalance(int[])
+numComments=10
