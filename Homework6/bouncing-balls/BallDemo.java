@@ -108,8 +108,9 @@ public class BallDemo
             myCanvas.wait(50);           // small delay
             while(ballIterator.hasNext()){
                 BoxBall nextBall = ballIterator.next();
-                distanceCheckBoxBalls();
                 nextBall.move();
+                distanceCheckBoxBalls();
+                
                 
                 /*if(nextBall.getXPosition() >= 550 - 16){
                     finished = true;
@@ -125,17 +126,15 @@ public class BallDemo
         if(allBoxBalls.size() <= 1){
             return;
         }
-        for(int i = 0; i < allBoxBalls.size() - 1; i++){
-            for(int j = 1; j < allBoxBalls.size(); j++){
-                if(i == j){
-                    j++;
-                }
-                else{
+        for(int i = 0; i < allBoxBalls.size(); i++){
+            for(int j = 0; j < allBoxBalls.size(); j++){
+                if(i != j){
+                    
                     BoxBall one = allBoxBalls.get(i);
                     BoxBall two = allBoxBalls.get(j);
-                    int distance = (int)(Math.pow(one.getXPosition()-two.getXPosition(), 2) + Math.pow(one.getYPosition()-two.getYPosition(), 2));
-                    distance = (int)Math.sqrt(distance);
-                    if(distance <= 32){
+                    double distanceSq = (Math.pow(one.getXPosition()-two.getXPosition(), 2) + Math.pow(one.getYPosition()-two.getYPosition(), 2));
+                    int distance = (int)Math.sqrt(distanceSq);
+                    if(distance <= 16){
                         collisionDetected(one, two);
                     }
                 }
@@ -144,13 +143,12 @@ public class BallDemo
     }
     
     private void collisionDetected(BoxBall one, BoxBall two){
-        int constantk = (int)(((one.getXSpeed() - two.getXSpeed())*(two.getXPosition() - one.getXPosition()) + (one.getYSpeed() - two.getYSpeed())*(two.getYPosition() - one.getYPosition()))/(Math.pow(32,2)));
-        if(constantk <= 0){
-            return;
-        }
+        double constantk = (((one.getXSpeed() - two.getXSpeed())*(two.getXPosition() - one.getXPosition()) + (one.getYSpeed() - two.getYSpeed())*(two.getYPosition() - one.getYPosition()))/(Math.pow(16,2)));
+        if(constantk > 0){
         one.setXSpeed((int)(one.getXSpeed() - constantk*(two.getXPosition() - one.getXPosition())));
         one.setYSpeed((int)(one.getYSpeed() - constantk*(two.getYPosition() - one.getYPosition())));
         two.setXSpeed((int)(two.getXSpeed() - constantk*(one.getXPosition() - two.getXPosition())));
         two.setYSpeed((int)(two.getYSpeed() - constantk*(one.getYPosition() - two.getYPosition())));
+        }
     }
 }
