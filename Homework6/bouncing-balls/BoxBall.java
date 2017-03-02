@@ -118,18 +118,30 @@ public class BoxBall
         return yPosition;
     }
     
+    /**
+     * return the horizontal speed of this ball
+     */
     public int getXSpeed(){
         return xSpeed;
     }
     
+    /**
+     * return the vertical speed of this ball
+     */
     public int getYSpeed(){
         return ySpeed;
     }
     
+    /**
+     * set the horizontal speed of this ball
+     */
     public void setXSpeed(int newSpeed){
         xSpeed = newSpeed;
     }
     
+    /**
+     * return the vertical speed of this ball
+     */
     public void setYSpeed(int newSpeed){
         ySpeed = newSpeed;
     }

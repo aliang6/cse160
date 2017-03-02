@@ -27,7 +27,7 @@ public class BallDemo
     }
 
     /**
-     * Simulate two bouncing balls
+     * Simulate a given amount of bouncing balls
      */
     public void bounce(int amountOfBalls)
     {
@@ -74,6 +74,9 @@ public class BallDemo
         }
     }
     
+    /**
+     * Simulate a given amount of balls that are able to bounce off of walls
+     */
     public void boxBounce(int amountOfBalls)
     {
         allBoxBalls.clear();
@@ -122,6 +125,9 @@ public class BallDemo
         }
     }
     
+    /**
+     * Calculate distance between all the balls, if they are colliding, then a collision is detected.
+     */
     private void distanceCheckBoxBalls(){ //Assuming same size balls i.e. same mass and radius
         if(allBoxBalls.size() <= 1){
             return;
@@ -142,6 +148,9 @@ public class BallDemo
         }
     }
     
+    /**
+     * Change the speed of the balls when colliding.
+     */
     private void collisionDetected(BoxBall one, BoxBall two){
         double constantk = (((one.getXSpeed() - two.getXSpeed())*(two.getXPosition() - one.getXPosition()) + (one.getYSpeed() - two.getYSpeed())*(two.getYPosition() - one.getYPosition()))/(Math.pow(16,2)));
         if(constantk > 0){
