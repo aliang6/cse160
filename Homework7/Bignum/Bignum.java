@@ -114,8 +114,8 @@ public class Bignum
         else{
             while(p > 1){
                 this.mul(original);
-                System.out.println("Temp = " + original.toString());
-                System.out.println(this.toString());
+                //System.out.println("Temp = " + original.toString());
+                //System.out.println(this.toString());
                 p--;
             }
         }
@@ -168,16 +168,21 @@ public class Bignum
     }
     
     public static void main(String[] args){
-        Bignum x = new Bignum(2);
-        Bignum y = new Bignum(2);
-        //System.out.println(x.mulOneDigit(9, 0).toString());
-        //System.out.println(x.toString());
-        /*int i = 10;
-        while (i > 1){
-            System.out.println(x.mul(y).toString());
-            i--;
-        }*/
-        System.out.println(x.pow(10).toString());
+        // Print out factorial function
+        Bignum previous = new Bignum(1);
+        String factorial = previous.toString();
+        Bignum temp;
+        for(int i = 1; i <= 50; i++){
+            temp = new Bignum(i);
+            temp.mul(previous);
+            factorial += ", " + temp.toString();
+            previous = temp;
+        }
+        System.out.println(factorial);
         
+        // Print out 987 to the 23rd power
+        Bignum number = new Bignum(987);
+        number.pow(23);
+        System.out.println(number.toString());
     }
 }
