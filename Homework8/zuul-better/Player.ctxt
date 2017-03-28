@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=maxWeight\ health
+comment0.target=Player(int,\ int)
+comment0.text=\n\ Constructor\n
+comment1.params=
+comment1.target=int\ getCurrentWeight()
+comment1.text=\n\ Player\ accessors\n
+comment2.params=
+comment2.target=int\ getMaxWeight()
+comment3.params=item
+comment3.target=boolean\ hasItem(java.lang.String)
+comment3.text=\n\ Check\ if\ player\ has\ an\ item\n
+comment4.params=key\ itemToAdd
+comment4.target=void\ take(java.lang.String,\ Item)
+comment5.params=key
+comment5.target=void\ drop(java.lang.String)
+comment6.params=key
+comment6.target=void\ loseItem(java.lang.String)
+comment7.params=
+comment7.target=void\ eatCookie()
+numComments=8

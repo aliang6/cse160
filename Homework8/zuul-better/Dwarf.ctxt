@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Dwarf()
+comment1.params=player\ items
+comment1.target=void\ stealItem(Player,\ java.lang.String[])
+numComments=2

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Monster()
+comment1.params=rooms
+comment1.target=void\ moveMonster(Room[])
+comment1.text=\n\ Method\ for\ random\ room\ movement\n
+numComments=2
