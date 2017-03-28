@@ -1,33 +1,17 @@
 
 /**
- * Write a description of class Nettles here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Nettles Class - Stings player and makes them sleep for a number of turns
  */
 public class Nettles extends Monster
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Nettles
-     */
-    public Nettles()
-    {
-        // initialise instance variables
-        x = 0;
+    public Nettles(){
+        super();
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Make the player sleep for a number of turns
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public int sting(int turns){
+        return turns += (int)(Math.random() * 4 + 1);
     }
 }

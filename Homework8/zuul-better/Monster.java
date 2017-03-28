@@ -1,9 +1,6 @@
 
 /**
- * Write a description of class Monster here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Monster Class
  */
 public class Monster extends Character
 {
@@ -15,7 +12,7 @@ public class Monster extends Character
      * Method for random room movement
      */
     public void moveMonster(Room[] rooms){
-        int x = (int)(Math.random() * rooms.length);
+        int x = (int)(Math.random() * (rooms.length - 1));
         currentRoom = rooms[x];
     }
 }

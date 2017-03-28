@@ -7,8 +7,8 @@
  */
 public class Player extends Character
 {
-    private int maxWeight, currentWeight;
-    private int health;
+    private int maxWeight, currentWeight, health;
+    private boolean alive;
     
     /**
      * Constructor
@@ -17,6 +17,7 @@ public class Player extends Character
         super();
         this.maxWeight = maxWeight;
         this.health = health;
+        alive = true;
     }
     
     /**
@@ -29,6 +30,24 @@ public class Player extends Character
     
     public int getMaxWeight(){
         return maxWeight;
+    }
+    
+    public int getHealth(){
+        return health;
+    }
+    
+    public boolean living(){
+        return alive;
+    }
+    
+    /**
+     * Health modifier
+     */
+    public void minusHealth(){
+        health -= 2;
+        if(health <= 0){
+            alive = false;
+        }
     }
     
     /**

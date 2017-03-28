@@ -1,9 +1,6 @@
 
 /**
- * Write a description of class Dwarf here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Dwarf Class - Steals Items
  */
 public class Dwarf extends Monster
 {

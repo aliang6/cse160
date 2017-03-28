@@ -20,8 +20,8 @@ public class Game
     private Parser parser;
     private Player player;
     private Dwarf dwarf;
-    //private Ogre ogre;
-    //private Nettles nettles;
+    private Ogre ogre;
+    private Nettles nettles;
     private Room outside, theater, pub, lab, office; 
     private Room[] rooms;
     private Item stick, carrot, banana, cookie, dollar, chair, rabbit, juice;
@@ -36,8 +36,8 @@ public class Game
         parser = new Parser();
         player = new Player(10, 1);
         dwarf = new Dwarf();
-        //ogre = new Ogre();
-        //nettles = new Nettles();
+        ogre = new Ogre();
+        nettles = new Nettles();
         createRoomsAndItems();
     }
 
@@ -46,19 +46,19 @@ public class Game
      */
     private void createRoomsAndItems()
     {
-        rooms = new Room[5];
-        rooms[0] = outside;
-        rooms[1] = theater;
-        rooms[2] = pub;
-        rooms[3] = lab;
-        rooms[4] = office;
-      
         // create the rooms
         outside = new Room("outside the main entrance of the university");
         theater = new Room("in a lecture theater");
         pub = new Room("in the campus pub");
         lab = new Room("in a computing lab");
         office = new Room("in the computing admin office");
+        
+        rooms = new Room[5];
+        rooms[0] = outside;
+        rooms[1] = theater;
+        rooms[2] = pub;
+        rooms[3] = lab;
+        rooms[4] = office;
         
         // initialise room exits
         outside.setExit("east", theater);
@@ -105,6 +105,9 @@ public class Game
         
         player.setNewRoom(outside);
         dwarf.setNewRoom(pub);
+        ogre.setNewRoom(lab);
+        nettles.setNewRoom(theater);
+        
     }
 
     /**
@@ -118,9 +121,33 @@ public class Game
         // execute them until the game is over.
                 
         boolean finished = false;
-        while (! finished) {
+        while (! finished && player.living()) {
             Command command = parser.getCommand();
             finished = processCommand(command);
+            int turns = 1;
+            if(player.getCurrentRoom() == nettles.getCurrentRoom()){
+                System.out.println("The nettle is in this room!");
+                turns = nettles.sting(turns);
+                System.out.println("You have been put to sleep for " + turns + " turns.");
+            }
+            for(int i = turns; i > 0; i--){
+                if(player.getCurrentRoom() == dwarf.getCurrentRoom()){
+                    System.out.println("The dwarf is in this room!");
+                    dwarf.stealItem(player, items);
+                }
+                dwarf.moveMonster(rooms);
+                if(player.getCurrentRoom() == ogre.getCurrentRoom()){
+                    System.out.println("The ogre is in this room!");
+                    ogre.hit(player);
+                    System.out.println(player.getHealth());
+                    if(! player.living()){
+                        System.out.println("You lost too much health and died.");
+                    }
+                }
+                else{
+                    ogre.moveMonster(rooms);
+                }
+            }
         }
         System.out.println("Thank you for playing.  Good bye.");
     }
@@ -221,10 +248,6 @@ public class Game
         }
         else {
             player.setNewRoom(nextRoom);
-            if(player.getCurrentRoom() == dwarf.getCurrentRoom()){
-                System.out.println("The dwarf is in this room!");
-                dwarf.stealItem(player, items);
-            }
             System.out.println(nextRoom.getLongDescription());
             System.out.println(nextRoom.printRoomItems());
         }
