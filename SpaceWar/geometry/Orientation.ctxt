@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=deg
+comment0.target=Orientation(double)
+comment0.text=\n\ Construct\ an\ orientation\ given\ an\ angle\ in\ degrees.\n\n\ @param\ deg\ The\ angle\ in\ degrees,\ where\ 0\ represents\ an\ orientation\n\ in\ the\ direction\ of\ the\ x\ coordinate\ axis.\n
+comment1.params=vector
+comment1.target=Orientation(Vector2D)
+comment1.text=\n\ Construct\ an\ orientation\ given\ a\ vector\ that\ points\ in\ the\n\ direction\ of\ the\ orientation.\n\n\ @param\ vector\ A\ vector\ that\ points\ in\ the\ direction\ of\ the\n\ orientation.\ \ This\ vector\ must\ have\ nonzero\ length.\n
+comment2.params=
+comment2.target=double\ getAngle()
+comment2.text=\n\ Return\ the\ angle\ associated\ with\ this\ orientation.\n\n\ @return\ The\ angle\ associated\ with\ this\ orientation.\n
+comment3.params=
+comment3.target=Vector2D\ getDirection()
+comment3.text=\n\ Return\ the\ unit\ vector\ associated\ with\ this\ orientation.\n\n\ @return\ The\ unit\ vector\ associated\ with\ this\ orientation.\n
+comment4.params=deg
+comment4.target=Orientation\ rotateBy(double)
+comment4.text=\n\ Rotate\ an\ orientation\ by\ a\ specified\ increment\ in\ degrees,\n\ returning\ the\ new\ orientation.\n\n\ @param\ deg\ The\ number\ of\ degrees\ to\ rotate\ by.\n\ @return\ a\ new\ orientation\ obtained\ by\ rotating\ this\ orientation\n\ by\ the\ specified\ number\ of\ degrees.\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\n\ Create\ a\ string\ representation\ of\ this\ orientation.\n\n\ @return\ a\ string\ representation\ of\ the\ orientation.\n
+numComments=6

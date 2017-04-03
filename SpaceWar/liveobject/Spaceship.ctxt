@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.params=a\ k\ cs\ sb\ p\ v\ o
+comment0.target=Spaceship(animation.Animator,\ animation.Keyboard,\ int,\ Scoreboard,\ geometry.Vector2D,\ geometry.Vector2D,\ geometry.Orientation)
+comment0.text=\r\n\ Initialize\ a\ Spaceship.\r\n\r\n\ @param\ a\ The\ animator\ that\ manages\ the\ update\ and\ display.\r\n\ @param\ k\ The\ source\ of\ keyboard\ input\ for\ control.\r\n\ @param\ cs\ Which\ set\ of\ keys\ are\ we\ taking\ control\ from?\r\n\ (0\ \=\ ASDF,\ 1\ \=\ KL;').\r\n\ @param\ sb\ Scoreboard\ to\ receive\ score\ for\ this\ spaceship.\r\n\ @param\ p\ The\ initial\ position\ of\ the\ spaceship.\r\n\ @param\ v\ The\ initial\ velocity\ of\ the\ spaceship.\r\n\ @param\ o\ The\ initial\ orientation\ of\ the\ spaceship.\r\n
+comment1.params=
+comment1.target=double\ gravitySusceptibility()
+comment1.text=\r\n\ Return\ extent\ of\ gravity\r\n
+comment2.params=g
+comment2.target=void\ draw(java.awt.Graphics)
+comment2.text=\r\n\ Method\ for\ drawing\ the\ spaceship\ on\ the\ screen.\r\n\r\n\ @param\ g\ The\ graphics\ object\ to\ be\ used\ for\ drawing.\r\n
+comment3.params=dt
+comment3.target=void\ update(double)
+comment3.text=\r\n\ Method\ for\ performing\ one\ step\ of\ the\ physical\ simulation\r\n\ associated\ with\ this\ object.\r\n\r\n\ @param\ dt\ The\ amount\ of\ time\ covered\ by\ the\ current\ time\ step.\r\n
+comment4.params=
+comment4.target=boolean\ canInteract()
+comment4.text=\r\n\ Method\ for\ determining\ whether\ another\ object\ can\ interact\r\n\ with\ this\ spaceship.\ \ If\ this\ spaceship\ is\ destroyed,\ other\r\n\ objects\ should\ not\ be\ able\ to\ interact\ with\ it.\r\n\r\n\ @return\ true\ if\ this\ object\ can\ interact\ with\ other\ objects,\r\n\ and\ false\ otherwise.\r\n
+comment5.params=
+comment5.target=boolean\ isDestroyed()
+comment5.text=\r\n\ Determine\ whether\ this\ spaceship\ is\ destroyed.\r\n\ A\ destroyed\ spaceship\ should\ not\ interact\ with\ other\ objects.\r\n
+comment6.params=
+comment6.target=void\ setDestroyed()
+comment6.text=\r\n\ @override\r\n\ Cause\ this\ spaceship\ to\ be\ destroyed.\r\n\ When\ a\ spaceship\ is\ destroyed,\ it\ disappears\ for\ a\ certain\ amount\r\n\ of\ time\ and\ is\ then\ reincarnated\ in\ an\ initial\ state.\r\n
+comment7.params=keyCode
+comment7.target=void\ keyPressed(int)
+comment7.text=\r\n\ Handle\ keyPressed\ event.\r\n\r\n\ @param\ keyCode\ The\ code\ for\ the\ key\ that\ was\ pressed.\r\n
+comment8.params=keyCode
+comment8.target=void\ keyReleased(int)
+comment8.text=\r\n\ Handle\ keyReleased\ event.\r\n\r\n\ @param\ keyCode\ The\ code\ for\ the\ key\ that\ was\ released.\r\n
+numComments=9

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=a\ p
+comment0.target=Scoreboard(animation.Animator,\ geometry.Vector2D)
+comment0.text=\r\n\ Initialize\ a\ Scoreboard\r\n\r\n\ @param\ a\ The\ animator\ that\ manages\ the\ update\ and\ display.\r\n\ @param\ p\ The\ position\ of\ the\ score.\r\n
+comment1.params=g
+comment1.target=void\ draw(java.awt.Graphics)
+comment1.text=\r\n\ Method\ for\ drawing\ the\ scoreboard\ on\ the\ screen.\r\n\r\n\ @param\ g\ The\ graphics\ object\ to\ be\ used\ for\ drawing.\r\n
+comment2.params=
+comment2.target=void\ increment()
+comment2.text=\r\n\ Increment\ the\ score\ on\ this\ scoreboard.\r\n
+numComments=3

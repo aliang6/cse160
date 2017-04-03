@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=f\ t
+comment0.target=Segment2D(Vector2D,\ Vector2D)
+comment0.text=\n\ Initialize\ a\ segment\ given\ it\ starting\ and\ ending\ positions.\n\n\ @param\ f\ The\ starting\ position.\n\ @param\ t\ The\ ending\ position.\n
+comment1.params=
+comment1.target=Vector2D\ getFrom()
+comment1.text=\n\ Accessor\ for\ getting\ the\ starting\ position\ of\ this\ segment.\n\n\ @return\ The\ starting\ position\ of\ this\ segment.\n
+comment2.params=
+comment2.target=Vector2D\ getTo()
+comment2.text=\n\ Accessor\ for\ getting\ the\ ending\ position\ of\ this\ segment.\n\n\ @return\ The\ ending\ position\ of\ this\ segment.\n
+comment3.params=vector
+comment3.target=Segment2D\ translateBy(Vector2D)
+comment3.text=\n\ Translate\ this\ segment\ by\ a\ specified\ vector,\ returning\ a\ new\ segment.\n\n\ @param\ vector\ The\ vector\ to\ translate\ by.\n\ @return\ A\ new\ segment\ obtained\ by\ translating\ this\ segment\ by\ the\n\ specified\ vector.\n
+comment4.params=angle
+comment4.target=Segment2D\ rotateBy(double)
+comment4.text=\n\ Rotate\ this\ segment\ by\ a\ specified\ angle,\ returning\ a\ new\ segment.\n\n\ @param\ angle\ The\ angle\ by\ which\ to\ rotate\ (positive\ is\n\ counterclockwise,\ negative\ is\ clockwise).\n\ @return\ A\ new\ segment\ obtained\ by\ rotating\ this\ segment\ by\ the\n\ specified\ angle.\n
+numComments=5

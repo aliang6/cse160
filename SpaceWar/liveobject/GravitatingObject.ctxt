@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=anim
+comment0.target=GravitatingObject(animation.Animator)
+comment0.text=\r\n\ Creates\ a\ gravity\ object\r\n
+comment1.params=
+comment1.target=double\ gravityStrength()
+comment1.text=\r\n\ Return\ strength\ of\ gravity\r\n
+comment2.params=
+comment2.target=double\ gravitySusceptibility()
+comment2.text=\r\n\ Return\ extent\ of\ gravity\r\n
+comment3.params=other
+comment3.target=void\ interactWith(GravitatingObject)
+comment3.text=\r\n\ @override\ interactWith\r\n
+comment4.params=
+comment4.target=void\ setDestroyed()
+comment4.text=\r\n\ Destroy\ this\ LiveObject\r\n
+comment5.params=dt
+comment5.target=void\ update(double)
+comment5.text=\r\n\ @override\ update\r\n
+numComments=6

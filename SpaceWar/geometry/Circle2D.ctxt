@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=cen\ rad
+comment0.target=Circle2D(Vector2D,\ double)
+comment0.text=\n\ Initialize\ a\ circle\ with\ a\ specified\ center\ and\ radius.\n\n\ @param\ cen\ The\ center\ of\ the\ circle.\n\ @param\ rad\ The\ radius\ of\ the\ circle.\n
+comment1.params=vector
+comment1.target=Circle2D\ translateBy(Vector2D)
+comment1.text=\n\ Translate\ this\ circle\ by\ a\ specified\ vector,\ returning\ a\ new\ circle.\n\n\ @param\ vector\ The\ vector\ to\ translate\ by.\n\ @return\ A\ new\ circle\ obtained\ by\ translating\ this\ circle\ by\ the\n\ specified\ vector.\n
+comment2.params=circle
+comment2.target=boolean\ overlapsWith(Circle2D)
+comment2.text=\n\ Determine\ if\ this\ circle\ overlaps\ with\ a\ specified\ circle.\n\n\ @param\ circle\ The\ circle\ to\ be\ checked\ for\ overlap\ with\ this\ circle.\n\ @return\ true\ if\ the\ argument\ circle\ overlaps\ with\ this\ circle,\n\ otherwise\ false.\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\n\ Create\ a\ string\ representation\ of\ this\ circle.\n\n\ @return\ a\ string\ representation\ of\ the\ circle.\n
+numComments=4

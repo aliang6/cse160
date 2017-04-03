@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=keyCode
+comment0.target=void\ keyPressed(int)
+comment0.text=\r\n\ Method\ called\ when\ a\ key\ is\ pressed.\r\n\r\n\ @param\ keyCode\ The\ code\ of\ the\ key\ that\ was\ pressed.\r\n
+comment1.params=keyCode
+comment1.target=void\ keyReleased(int)
+comment1.text=\r\n\ Method\ called\ when\ a\ key\ is\ released.\r\n\r\n\ @param\ keyCode\ The\ code\ of\ the\ key\ that\ was\ released.\r\n
+numComments=2
