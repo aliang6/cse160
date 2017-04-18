@@ -50,6 +50,16 @@ public class Torpedo extends GravitatingObject {
                 animator.drawArc(g, position, RADIUS, 0, 360);
         }
     }
+    
+    public void interactWith(GravitatingObject other){
+        if(other instanceof Star
+        || other instanceof Spaceship
+        || other instanceof Torpedo) {
+            // Check for collisions
+            if(other != this && other.overlaps(this))
+                setDestroyed();
+        }
+    }
 
     /**
      * @override

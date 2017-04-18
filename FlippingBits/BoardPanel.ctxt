@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=board\ target
+comment0.target=BoardPanel(FlippingBitsBoard,\ boolean)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ BoardPanel\n\ @params\ FlippingBitsBoard\ -\ a\ flipping\ bits\ board\n\ @params\ target\ -\ boolean\ value\ of\ whether\ the\ board\ is\ a\ target\ board\n
+comment1.params=
+comment1.target=javax.swing.JPanel\ getBoard()
+numComments=2

@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.params=a
 comment0.target=Star(animation.Animator)
-comment0.text=\r\n\ Initialize\ a\ Star.\r\n\r\n\ @param\ a\ The\ animator\ that\ manages\ the\ update\ and\ display.\r\n
+comment0.text=\n\ Initialize\ a\ Star.\n\n\ @param\ a\ The\ animator\ that\ manages\ the\ update\ and\ display.\n
 comment1.params=g
 comment1.target=void\ draw(java.awt.Graphics)
-comment1.text=\r\n\ Method\ for\ drawing\ the\ star\ on\ the\ screen.\r\n\r\n\ @param\ g\ The\ graphics\ object\ to\ be\ used\ for\ drawing.\r\n
+comment1.text=\n\ Method\ for\ drawing\ the\ star\ on\ the\ screen.\n\n\ @param\ g\ The\ graphics\ object\ to\ be\ used\ for\ drawing.\n
 comment2.params=
 comment2.target=double\ gravityStrength()
 comment3.params=dt
 comment3.target=void\ update(double)
-comment3.text=\r\n\ Make\ the\ star\ twinkle\r\n
+comment3.text=\n\ Make\ the\ star\ twinkle\n
 numComments=4

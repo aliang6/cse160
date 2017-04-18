@@ -18,10 +18,6 @@ import animation.KeyHandler;
  */
 
 public class Spaceship extends GravitatingObject implements KeyHandler {
-    
-    /** Extent of Gravity */
-    private double GRAVITY_EXTENT = 1.0;
-    
     /**
      * The rate of rotation, in degrees per second, when the rotate keys
      * are pressed.
@@ -184,11 +180,22 @@ public class Spaceship extends GravitatingObject implements KeyHandler {
             }
         } else {
             // A spaceship accelerates due to thrust and gravity.
+            super.update(dt);
             Vector2D a = orientation.getDirection().scaleBy(thrust);
             setAcceleration(a);
             // Call the update method of the super class to update
             // the position and orientation.
             super.update(dt);
+        }
+    }
+    
+    public void interactWith(GravitatingObject other){
+        if(other instanceof Star
+        || other instanceof Spaceship
+        || other instanceof Torpedo) {
+            // Check for collisions
+            if(other != this && other.overlaps(this))
+                setDestroyed();
         }
     }
 

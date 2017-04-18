@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.params=a\ p
-comment0.target=Explosion(animation.Animator,\ geometry.Vector2D)
-comment0.text=\r\n\ Initialize\ an\ Explosion.\r\n\r\n\ @param\ a\ The\ animator\ that\ manages\ the\ update\ and\ display.\r\n\ @param\ p\ The\ position\ of\ the\ explosion.\r\n
-comment1.params=g
-comment1.target=void\ draw(java.awt.Graphics)
-comment1.text=\r\n\ Method\ for\ drawing\ the\ explosion\ on\ the\ screen.\r\n\r\n\ @param\ g\ The\ graphics\ object\ to\ be\ used\ for\ drawing.\r\n
-numComments=2

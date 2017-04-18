@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=args
 comment0.target=void\ main(java.lang.String[])
-comment0.text=\r\n\ Entry\ point\ for\ the\ SpaceWar\ program.\r\n\ Initialize\ the\ animator\ and\ main\ frame,\ then\ start\ the\ animation\ timer.\r\n\r\n\ @param\ args\ Command\ line\ arguments.\ \ If\ the\ first\r\n\ argument\ is\ present,\ it\ is\ interpreted\ as\ an\ integer\ frame\ rate\ in\ Hz.\r\n
+comment0.text=\n\ Entry\ point\ for\ the\ SpaceWar\ program.\n\ Initialize\ the\ animator\ and\ main\ frame,\ then\ start\ the\ animation\ timer.\n\n\ @param\ args\ Command\ line\ arguments.\ \ If\ the\ first\n\ argument\ is\ present,\ it\ is\ interpreted\ as\ an\ integer\ frame\ rate\ in\ Hz.\n
 comment1.params=frameRate
 comment1.target=Main(int)
-comment1.text=\r\n\ Initialize\ the\ main\ frame.\r\n\r\n\ @param\ frameRate\ The\ frame\ rate\ in\ Hz.\r\n
+comment1.text=\n\ Initialize\ the\ main\ frame.\n\n\ @param\ frameRate\ The\ frame\ rate\ in\ Hz.\n
 numComments=2

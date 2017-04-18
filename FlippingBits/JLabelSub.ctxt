@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=JLabelSub()
+comment0.text=\n\ Constructor\ for\ label\ with\ nothing\ inside\n
+comment1.params=board\ i\ j
+comment1.target=JLabelSub(FlippingBitsBoard,\ int,\ int)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ JLabelSub\n\ @params\ board\ -\ the\ Flipping\ Bits\ Board\ to\ get\ the\ value\ from\n\ @params\ i\ -\ the\ row\ position\ in\ the\ board\n\ @params\ j\ -\ the\ column\ position\ in\ the\ board\n
+comment2.params=
+comment2.target=javax.swing.JLabel\ getLabel()
+comment3.params=label
+comment3.target=void\ setLabel(javax.swing.JLabel)
+numComments=4
